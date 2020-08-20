@@ -52,10 +52,17 @@ a {
   color: $secondary !important;
 }
 
+html
+{
+    border: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
 body
 {
     border: 0px;
-    padding: 0px;
-    overflow: hidden;
     margin: 0px;
+    overflow: hidden;
+    padding: 0px;
 }
