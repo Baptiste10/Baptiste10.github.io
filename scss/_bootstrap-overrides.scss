@@ -51,3 +51,11 @@ a {
 .text-secondary {
   color: $secondary !important;
 }
+
+body
+{
+    border: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px;
+}
