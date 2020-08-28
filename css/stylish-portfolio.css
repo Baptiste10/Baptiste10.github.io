@@ -4,21 +4,6 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
-.logo-container {
-  position: absolute;
-  width: 15%;
-  left: 4px;
-  top: 4px;
-}
-
-.logo {
-  width: 100px;
-  margin-top: 4px;
-  flex: 0 0 auto;
-  padding: 10px 10px 10px 0px;
-  margin: 0px;
-}
-
 body,
 html {
   width: 100%;
@@ -230,8 +215,8 @@ h6 {
 }
 
 footer.footer {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 footer.footer .social-link {
