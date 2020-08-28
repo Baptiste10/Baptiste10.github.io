@@ -278,6 +278,10 @@ a:hover, a:focus, a:active {
   background-color: #1D809F !important;
 }
 
+#white-background {
+  background-color: #f8f9fa;
+}
+
 .text-primary {
   color: #1D809F !important;
 }
