@@ -300,3 +300,10 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+body {
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
+  margin: 0px;
+}
