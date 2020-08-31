@@ -14,6 +14,21 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+.logo-container {
+  position: absolute;
+  width: 15%;
+  left: 4px;
+  top: 4px;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 4px;
+  flex: 0 0 auto;
+  padding: 10px 10px 10px 0px;
+  margin: 0px;
+}
+
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
@@ -215,8 +230,8 @@ h6 {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 footer.footer .social-link {
