@@ -296,10 +296,18 @@ a:hover, a:focus, a:active {
   background-color: #1D809F !important;
 }
 
+.bg-secondary {
+  background-color: #ecb807 !important;
+}
+
 .text-primary {
   color: #1D809F !important;
 }
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+#logo {
+  fill: white;
 }

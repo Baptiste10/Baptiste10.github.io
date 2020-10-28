@@ -44,10 +44,18 @@ a {
   background-color: $primary !important;
 }
 
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
 .text-primary {
   color: $primary !important;
 }
 
 .text-secondary {
   color: $secondary !important;
+}
+
+#logo {
+  fill: white;
 }
