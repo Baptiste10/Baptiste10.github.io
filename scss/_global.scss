@@ -1,50 +1,51 @@
 body,
 html {
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  @include body-font;
+    @include body-font;
+    font-size: 1.2rem;
 }
 
 // Custom Button Size
 .btn-xl {
-  padding: 1.25rem 2.5rem;
+    padding: 1.25rem 2.5rem;
 }
 
 .logo-container {
-  position:absolute;
-  width: 15%;
-  left:4px;
-  top:4px;
+    position: absolute;
+    width: 15%;
+    left: 4px;
+    top: 4px;
 }
 
 .logo {
-  width: 100px;
-  margin-top: 4px;
-  flex: 0 0 auto;
-  padding: 10px 10px 10px 0px;
-  margin: 0px;
+    width: 100px;
+    margin-top: 4px;
+    flex: 0 0 auto;
+    padding: 10px 10px 10px 0px;
+    margin: 0px;
 }
 
 // Content Section
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
 
 .content-section-heading {
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
 }
 
 // Typography
@@ -54,54 +55,50 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .text-faded {
-  color: fade-out($white, 0.3);
+    color: fade-out($white, 0.3);
 }
+
 
 /* Map */
 
 .map {
-  height: 30rem;
+    height: 30rem;
 }
 
 @media(max-width: 992px) {
-  .map {
-    height: 75%;
-  }
+    .map {
+        height: 75%;
+    }
 }
 
 .map iframe {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 // Scroll to top button
 .scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-
-  display: none;
-
-  width: 50px;
-  height: 50px;
-
-  text-align: center;
-
-  color: white;
-  background: fade-out($gray-800, .5);
-
-  line-height: 45px;
-  &:focus,
-  &:hover {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
     color: white;
-  }
-  &:hover {
-    background: $gray-800;
-  }
-  i {
-    font-weight: 800;
-  }
+    background: fade-out($gray-800, .5);
+    line-height: 45px;
+    &:focus,
+    &:hover {
+        color: white;
+    }
+    &:hover {
+        background: $gray-800;
+    }
+    i {
+        font-weight: 800;
+    }
 }
