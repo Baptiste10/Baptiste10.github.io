@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>SCALABLE Phishing Campaign</title>
+
+	<!-- Bootstrap Core CSS -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!-- Custom Fonts -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href=" https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.5/css/simple-line-icons.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+	<style>
+
+	body,
+	html {
+		width: 100%;
+		height: 100%;
+		border: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	body {
+		font-family: 'Source Sans Pro';
+	}
+
+
+	.btn-xl {
+		padding: 1.25rem 2.5rem;
+	}
+
+
+	.logo-container {
+		position: absolute;
+		width: 15%;
+		left: 4px;
+		top: 4px;
+	}
+
+
+	.logo {
+		width: 100px;
+		margin-top: 4px;
+		flex: 0 0 auto;
+		padding: 10px 10px 10px 0px;
+		margin: 0px;
+	}
+
+
+	.content-section {
+		padding-top: 7.5rem;
+		padding-bottom: 7.5rem;
+	}
+
+
+	.content-section-heading h2 {
+		font-size: 3rem;
+	}
+
+
+	.content-section-heading h3 {
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 700;
+	}
+
+
+	.text-faded {
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+
+	/* Map */
+	.map {
+		height: 30rem;
+	}
+
+
+	@media (max-width: 992px) {
+		.map {
+			height: 75%;
+		}
+	}
+
+
+	.map iframe {
+		pointer-events: none;
+	}
+
+
+	.scroll-to-top {
+		position: fixed;
+		right: 15px;
+		bottom: 15px;
+		display: none;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		color: white;
+		background: rgba(52, 58, 64, 0.5);
+		line-height: 45px;
+	}
+
+
+	.scroll-to-top:focus, .scroll-to-top:hover {
+		color: white;
+	}
+
+
+	.scroll-to-top:hover {
+		background: #343a40;
+	}
+
+
+	.scroll-to-top i {
+		font-weight: 800;
+	}
+
+
+	.masthead {
+		min-height: 30rem;
+		position: relative;
+		display: table;
+		width: 100%;
+		height: auto;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bluetree.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.masthead h1 {
+		font-size: 4rem;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	@media (min-width: 992px) {
+		.masthead {
+			height: 100vh;
+		}
+		.masthead h1 {
+			font-size: 5.5rem;
+		}
+	}
+
+
+	.service-icon {
+		background-color: #fff;
+		color: #1D809F;
+		height: 7rem;
+		width: 7rem;
+		display: block;
+		line-height: 7.5rem;
+		font-size: 2.25rem;
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+	}
+
+
+	.callout {
+		padding: 15rem 0;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.callout h2 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		display: block;
+		max-width: 30rem;
+	}
+
+
+	#portfolio {
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bluetree.jpg");
+	}
+
+
+	.portfolio-item {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		max-width: 530px;
+		margin: auto auto 1rem;
+	}
+
+
+	.portfolio-item .caption {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(33, 37, 41, 0.2);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+
+	.portfolio-item .caption .caption-content {
+		color: #fff;
+		margin: auto 2rem 2rem;
+	}
+
+
+	.portfolio-item .caption .caption-content h2 {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+
+
+	.portfolio-item .caption .caption-content p {
+		font-weight: 300;
+		font-size: 1.2rem;
+	}
+
+
+	@media (min-width: 992px) {
+		.portfolio-item {
+			max-width: none;
+			margin: 0;
+		}
+		.portfolio-item .caption {
+			transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+			transition: clip-path 0.25s ease-out, background-color 0.7s;
+			transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+			-webkit-clip-path: inset(0px);
+			clip-path: inset(0px);
+		}
+		.portfolio-item .caption .caption-content {
+			transition: opacity 0.25s;
+			margin-left: 5rem;
+			margin-right: 5rem;
+			margin-bottom: 5rem;
+		}
+		.portfolio-item img {
+			transition: -webkit-clip-path 0.25s ease-out;
+			transition: clip-path 0.25s ease-out;
+			transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+			-webkit-clip-path: inset(-1px);
+			clip-path: inset(-1px);
+		}
+		.portfolio-item:hover img {
+			-webkit-clip-path: inset(2rem);
+			clip-path: inset(2rem);
+		}
+		.portfolio-item:hover .caption {
+			background-color: rgba(29, 128, 159, 0.9);
+			-webkit-clip-path: inset(2rem);
+			clip-path: inset(2rem);
+		}
+	}
+
+
+	footer.footer {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+
+	footer.footer .social-link {
+		display: block;
+		height: 4rem;
+		width: 4rem;
+		line-height: 4.3rem;
+		font-size: 1.5rem;
+		background-color: #1D809F;
+		transition: background-color 0.15s ease-in-out;
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+	}
+
+
+	footer.footer .social-link:hover {
+		background-color: #155d74;
+		text-decoration: none;
+	}
+
+
+	a {
+		color: #1D809F;
+	}
+
+
+	a:hover, a:focus, a:active {
+		color: #155d74;
+	}
+
+
+	.btn-primary {
+		background-color: #1D809F !important;
+		border-color: #1D809F !important;
+		color: #fff !important;
+	}
+
+
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+		background-color: #155d74 !important;
+		border-color: #155d74 !important;
+	}
+
+
+	.btn-secondary {
+		background-color: #ecb807 !important;
+		border-color: #ecb807 !important;
+		color: #fff !important;
+	}
+
+
+	.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+		background-color: #ba9106 !important;
+		border-color: #ba9106 !important;
+	}
+
+
+	.btn-dark {
+		color: #fff !important;
+	}
+
+
+	.btn {
+		box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+		font-weight: 700;
+	}
+
+
+	.bg-primary {
+		background-color: #1D809F !important;
+	}
+
+
+	.bg-secondary {
+		background-color: #ecb807 !important;
+	}
+
+
+	.text-primary {
+		color: #1D809F !important;
+	}
+
+
+	.text-secondary {
+		color: #ecb807 !important;
+	}
+
+
+	#logo {
+		fill: white;
+	}
+	</style>
+</head>
+
+<body id="page-top">
+	<!-- Header -->
+	<header class="masthead d-flex">
+		<div class="logo-container">
+			<a title="To the homepage" class="Scalable019HeaderNavigation__LogoContainer-aaep7h-2 logo" href="https://www.Scalable.com/">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.794 84.958">
+					<g data-name="Ebene 2">
+						<path
+						id="logo"
+						d="M267.762 28.17h-36.061V0h99.093v28.17h-34.763l-9.04-9.89h31.067V9.89h-73.57v8.39h30.616l22.726 24.824v41.854h-33.065V37.61l12.037 12.986V75.47h8.99v-27.82zM0 0v84.958h33.065v-28.02l-12.038-17.73v36.26h-8.99v-65.18l50.696 74.67h35.96V0H66.23v30.767L46 0H31.316l46.35 68.177V9.49h8.99v65.979H71.474L20.478 0zm156.532 84.958h-33.065V0h33.065v22.426l-12.037 18.98V9.49h-8.99v65.979h8.99V57.838L181.155 0h40.856l-23.974 36.86 31.017 48.098h-41.855l-17.432-27.07L177.61 45.7l19.18 29.768h11.138l-24.824-38.21 17.931-27.77h-11.138l-33.364 52.344z" fill="#1E326E" data-name="Layer 1">
+					</path>
+				</g>
+			</svg>
+		</a>
+	</div>
+	<div class="container text-center my-auto text-white">
+		<h1 class="mb-1">You’ve Been Phished!</h1>
+		<h3 class="mb-5">
+			<em>SCALABLE Awareness Campaign</em>
+		</h3>
+		<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+	</div>
+	<div class="overlay"></div>
+</header>
+
+
+<!-- About -->
+<section class="content-section bg-primary" id="about">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-lg-10 mx-auto">
+				<h3 class="text-secondary mb-0">About</h3>
+				<h2>You have just been a victim of Phishing!</h2>
+				<p class="lead mb-5">You arrived on this page by following the link contained in an email simulating a phishing attack.</p>
+				<p>This is part of an awareness campaign against attacks known as 'Phishing' carried out by SCALABLE. We want to measure the reaction of our employees to this type of threat in order to establish a basis for comparison with future tests and
+					the results of phishing campaigns.</p>
+					<p>You may have been surprised by the secrecy of this simulation, which has not been announced. We wanted to prevent our employees from feeling that they were immune to any attack.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Call to Action -->
+	<section class="content-section" id="white-background">
+		<div class="container text-center">
+			<h2 class="mb-4">Is my security compromised?</h2>
+			<p><strong style="font-size:40px;">No.</strong> Unlike an actual attack, neither email nor this site will harm your security. In addition, no information about you was collected during this simulation.</p>
+			<p>We don’t measure on a personal level, but we measure anonymously the click rate of the phishing test and we won’t deliver any information to your supervisor. The exercise was conducted by an external partner who will only share aggregate data.</p>
+			<p>It is important to note that the ultimate goal of such a simulation is absolutely not to blame but on the contrary to help all employees to adopt appropriate behavior contributing to improving their security and that of SCALABLE. bank.</p>
+			<a class="btn btn-secondary btn-xl js-scroll-trigger" href="#services">Can you keep a secret?</a>
+		</div>
+	</section>
+
+
+	<!-- Services -->
+	<section class="content-section bg-secondary text-center" id="services">
+		<div class="container">
+			<div class="content-section-heading">
+				<h3 class="text-primary mb-0">Secret</h3>
+				<h2 class="mb-5">Do not tell your colleagues yet!</h2>
+				<p>This simulation has not been announced. Why ? Simply because cyber criminals don't warn and announce their attacks. Running this simulation without warning you is the best way to make this exercise as realistic as possible.</p>
+				<p><strong>So please do not divulge anything to your colleagues at this time:</strong> if your colleagues are informed that a simulation is in progress, you risk influencing their behavior and consequently the results of the exercise. We
+					will inform all employees once the simulation is finished and at the latest at the end of September.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Portfolio -->
+		<section class="content-section" id="portfolio">
+			<div class="container">
+				<div class="content-section-heading text-center text-white">
+					<h3 class="text-secondary mb-0">Hints</h3>
+					<h2 class="mb-5">How can I recognize a phishing email?</h2>
+				</div>
+				<div>
+					<p class="text-white">Five things should be checked to detect such an attack:</p>
+					<ul class="list-group">
+						<li class="list-group-item">The sender's address</li>
+						<li class="list-group-item">The content of the email</li>
+						<li class="list-group-item">The grammar and arrangement of elements in the email</li>
+						<li class="list-group-item">The links contained in the email</li>
+						<li class="list-group-item">If you expect this kind of email</li>
+					</ul>
+				</div>
+				<br>
+				<div>
+					<img class="img-fluid" src="img/example.png" alt="">
+				</div>
+			</section>
+
+
+			<!-- Callout -->
+			<section class="callout">
+				<div class="container text-center">
+					<h2 class="mx-auto mb-5">We thank you for your cooperation</h2>
+					<p>By making this simulation as realistic as possible, you are helping to set up our Anti-Phishing campaign, which will be supplemented by various communications on the risks and means of protecting yourself.</p>
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+			<footer class="footer text-center">
+				<div class="container">
+					<ul class="list-inline mb-5">
+						<li class="list-inline-item">
+
+						</li>
+					</ul>
+					<p class="text-muted small mb-0">Copyright &copy; SCALABLE</p>
+				</div>
+			</footer>
+
+
+			<!-- Scroll to Top Button-->
+			<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+				<i class="fas fa-angle-up"></i>
+			</a>
+
+			<!-- Bootstrap core JavaScript -->
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+			<!-- Plugin JavaScript -->
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+			<!-- Custom scripts for this template -->
+			<script>
+			(function($) {
+				"use strict"; // Start of use strict
+
+				// Closes the sidebar menu
+				$(".menu-toggle").click(function(e) {
+					e.preventDefault();
+					$("#sidebar-wrapper").toggleClass("active");
+					$(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+					$(this).toggleClass("active");
+				});
+
+				// Smooth scrolling using jQuery easing
+				$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000, "easeInOutExpo");
+							return false;
+						}
+					}
+				});
+
+				// Closes responsive menu when a scroll trigger link is clicked
+				$('#sidebar-wrapper .js-scroll-trigger').click(function() {
+					$("#sidebar-wrapper").removeClass("active");
+					$(".menu-toggle").removeClass("active");
+					$(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+				});
+
+				// Scroll to top button appear
+				$(document).scroll(function() {
+					var scrollDistance = $(this).scrollTop();
+					if (scrollDistance > 100) {
+						$('.scroll-to-top').fadeIn();
+					} else {
+						$('.scroll-to-top').fadeOut();
+					}
+				});
+
+			})(jQuery); // End of use strict
+
+			// Disable Google Maps scrolling
+			// See http://stackoverflow.com/a/25904582/1607849
+			// Disable scroll zooming and bind back the click event
+			var onMapMouseleaveHandler = function(event) {
+				var that = $(this);
+				that.on('click', onMapClickHandler);
+				that.off('mouseleave', onMapMouseleaveHandler);
+				that.find('iframe').css("pointer-events", "none");
+			}
+			var onMapClickHandler = function(event) {
+				var that = $(this);
+				// Disable the click handler until the user leaves the map area
+				that.off('click', onMapClickHandler);
+				// Enable scrolling zoom
+				that.find('iframe').css("pointer-events", "auto");
+				// Handle the mouse leave event
+				that.on('mouseleave', onMapMouseleaveHandler);
+			}
+			// Enable map zooming with mouse scroll when the user clicks the map
+			$('.map').on('click', onMapClickHandler);
+		</script>
+
+
+	</body>
+
+
+
+	</html>
