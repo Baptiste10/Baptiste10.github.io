@@ -1,3 +1,7 @@
+## Adapt Template
+
+Make sure to adapt the template to fit your client's identity and needs.
+
 # [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/themes/stylish-portfolio/)
 
 [Stylish Portfolio](https://startbootstrap.com/themes/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
